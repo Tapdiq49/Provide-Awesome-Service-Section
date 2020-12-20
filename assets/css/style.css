@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+    line-height: 1.6;
+    color: #505489;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+#section-service{
+    background-image: url(../img/bg1.png);
+    padding-top: 100px;
+    margin-bottom: 300px;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container .section-title{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.container .section-title h2{
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgba(137, 110, 255, 0.1);
+    color: #896eff !important;
+}
+
+.container .section-title h1{
+    line-height: 1.2;
+    font-weight: 800;
+    margin-top: 30px;
+    font-size: 35px;
+    color: #1f2471;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .items{
+    width: 33.33333%;
+}
+
+.items .item{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.items .item .icon-box{
+    position: relative;
+    padding: 30px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+.items .item .icon-box:hover{
+    box-shadow: 0 0px 10px 4px rgba(31, 66, 135, 0.1)
+}
+.items .item .icon-box::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    background-image: url(../img/pattern5.png);
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.items .item .icon-box:hover::before{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.items .item .icon-box .icon{
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin: 24px 0 45px;
+    position: relative;
+    z-index: 2;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.items .item .icon-box::after{
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    right: -30px;
+    width: 250px;
+    height: 290px;
+    background-image: url(../img/pattern6.png);
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    transform: scale(0.5);
+    opacity: 0;
+}
+.items .item .icon-box:hover::after{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.items .item .icon-box .icon a{
+    color: #fff;
+}
+
+.items .item .icon-box .icon a i{
+    transition: all .5s;
+    font-size: 35px;
+    line-height: 90px;
+}
+
+.items .item .icon-box:hover .icon a i{
+    display: inline-block;
+    transform: rotate(360deg);
+}
+
+.items .item .icon-box .icon1::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    height: 133px;
+    width: 82px;
+    background-image: url(../img/yellow.png);
+    transition: all 0.5s;
+    z-index: -1;
+}
+.items .item .icon-box:hover .icon::after{
+    right: 30px;
+}
+.items .item .icon-box .icon-content h4{
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #1f2471;
+    font-size: 22px;
+}
+
+.icon1{
+    background-color: #ffa808;
+    box-shadow: 0 2px 15px rgba(255, 168, 8, 0.5);
+}
+
+.icon2{
+    box-shadow: 0 2px 15px rgba(255, 88, 110, 0.5);
+    background-color: #ff586e;
+}
+
+.icon2::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    height: 133px;
+    width: 82px;
+    background-image: url(../img/red.png);
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.icon3{
+    box-shadow: 0 2px 15px rgba(2, 158, 118, 0.5);
+    background-color: #029e76;
+}
+
+.icon3::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    height: 133px;
+    width: 82px;
+    background-image: url(../img/green.png);
+    z-index: -1;
+    transition: all 0.5s;
+}
